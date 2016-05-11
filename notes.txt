@@ -1,0 +1,3 @@
+The content should be stacked on xs screens,
+but the empty div should be to the right side of the content for sm to lg screen sizes.
+Proper use of appropriate combination of col-xs- and col-sm- classes
