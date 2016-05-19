@@ -30,6 +30,10 @@
     padding: 10px;
 }
 
+.affix {
+    top:100px;
+}
+
 address {
     font-size: 80%;
     margin: 0px;
