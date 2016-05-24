@@ -74,7 +74,8 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a data-toggle="modal" data-target="#loginModal">
+                    <!-- Modified <a> tag for assignment 4 -->
+                    <li><a data-target="#loginModal">
                         <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                 </ul>
@@ -195,7 +196,8 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:40px;"></p>
-                    <a type="button" data-toggle="modal" data-target="#ReservationModal" class="btn btn-warning btn-block">Reserve Table</a>
+                    <!-- Modified button for assignment 4 -->
+                    <a type="button" data-target="#ReservationModal" class="btn btn-warning btn-block">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -402,6 +404,13 @@
             });
             $("#carousel-play").click(function(){
                 $("#mycarousel").carousel('cycle');
+            });
+            // Added for assignment 4
+            $("a[data-target='#loginModal']").click(function(){
+                $("#loginModal").modal();
+            });
+            $("a[data-target='#ReservationModal']").click(function(){
+                $("#ReservationModal").modal();
             });
         });
     </script>
